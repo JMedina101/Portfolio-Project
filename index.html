@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&family=Syne&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#cards-section">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <div id="hamburger" class="navbar-hamburger" onclick="toggleDrawer()">
+      &#9776;
+    </div>
+    <div class="drawer">
+      <a href="#home" onclick="toggleDrawer();">Home</a>
+      <a href="#about" onclick="toggleDrawer();">About</a>
+      <a href="#cards-section" onclick="toggleDrawer();">Skills</a>
+      <a href="#projects" onclick="toggleDrawer();">Projects</a>
+      <a href="#contact" onclick="toggleDrawer();">Contact</a>
+    </div>
+    <main class="main" id="home">
+      <div class="container">
+        <div class="block-weighted">
+          <div class="main-content-container basis-50">
+            <div class="heading-container">
+              <h2 class="eyebrow mb-1">
+                👋 Hi my name is Jose Miguel S. Medina & I am a
+              </h2>
+              <h2 class="head-1 bolder">Junior Web Developer</h2>
+            </div>
+            <div class="link-container mt-1">
+              <a
+                href="https://www.linkedin.com/in/jose-miguel-medina-7b1106154/"
+                target="_blank"
+                class="btn btn-primary mr-half"
+                >Linkedin</a
+              >
+              <a href="tel:+639219110777" class="btn btn-secondary"
+                >Contact me</a
+              >
+            </div>
+          </div>
+          <div class="img-container basis-50">
+            <img src="./assets/images/SelfieDoodle.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="about section bg-grey" id="about">
+      <div class="about-content__container">
+        <h1 class="head-1 mb-1">About me.</h1>
+        <p class="p-medium">
+          Hello, I am a recent graduate from the
+          <strong>University of Santo Tomas</strong> with a strong passion for
+          web development. Over the past 1 year and 7 months, I have been
+          working as a <strong>web developer</strong> at
+          <strong>Web Powerhouse </strong>, where I honed my skills in creating
+          <strong>dynamic</strong> and <strong>user-friendly</strong> websites.
+          Additionally, I gained valuable experience as a
+          <strong>QA Engineer intern</strong> at
+          <strong>Philippine Digital Assets Exchange (PDAX)</strong> for 3
+          months, where I developed a keen <strong>eye for detail</strong> and a
+          <strong>commitment</strong> to ensuring the quality of digital
+          products. I am eager to leverage my skills and experiences to
+          contribute effectively to future projects and grow as a professional
+          in the field of web development.
+        </p>
+      </div>
+    </section>
+    <section class="skills section" id="cards-section">
+      <div class="container-tight">
+        <div class="skills-heading">
+          <h2 class="head-2 mb-1">What Skills do I have?</h2>
+          <p class="p-medium">
+            As a dynamic and versatile professional, I bring a unique blend of
+            hard and soft skills that enable me to excel in diverse situations.
+          </p>
+        </div>
+        <div class="skills-grid-container">
+          <div class="skills-card animate-on-scroll">
+            <img
+              src="./assets/images/web-design.png"
+              alt=""
+              class="skills-icon"
+            />
+            <h2 class="head-skills">FE Development</h2>
+            <p class="">
+              Proficient in turning wireframes in to dynamic webpages using
+              HTML,CSS, JAVASCRIPT or react.
+            </p>
+          </div>
+          <div class="skills-card animate-on-scroll">
+            <img
+              src="./assets/images/web-page_1336537.png"
+              alt=""
+              class="skills-icon"
+            />
+            <h2 class="head-skills">BE development</h2>
+            <p>
+              Currently in the process of upskilling one's self in node.js
+              faramework and laravel php framework
+            </p>
+          </div>
+          <div class="skills-card animate-on-scroll">
+            <img src="./assets/images/qa.png" alt="" class="skills-icon" />
+            <h2 class="head-skills">Quality Assurance</h2>
+
+            <p>
+              With a strong focus on Quality Assurance, I leverage my knowledge
+              in BDD and Gherkin syntax to create comprehensive test scenarios
+              that ensure effective test coverage. Additionally, I proficiently
+              use Postman to validate payload results.
+            </p>
+          </div>
+          <div class="skills-card animate-on-scroll">
+            <img
+              src="./assets/images/empathy_5828180.png"
+              alt=""
+              class="skills-icon"
+            />
+            <h2 class="head-skills">Empathy</h2>
+
+            <p>
+              As a compassionate and empathetic team member, I actively listen
+              and understand the concerns of my workmates, offering support and
+              fostering a positive work environment where everyone feels valued
+              and heard
+            </p>
+          </div>
+          <div class="skills-card animate-on-scroll">
+            <img
+              src="./assets/images/listener.png"
+              alt=""
+              class="skills-icon"
+            />
+            <h2 class="head-skills">Listener</h2>
+            <p>
+              As a good listener, I pay close attention to others' perspectives
+              and concerns, allowing me to understand their needs better and
+              respond with empathy and thoughtful solutions.
+            </p>
+          </div>
+          <div class="skills-card animate-on-scroll">
+            <img
+              src="./assets/images/teaching.png"
+              alt=""
+              class="skills-icon"
+            />
+            <h2 class="head-skills">Loves learning & teaching others</h2>
+
+            <p>
+              Loves learning and derives immense joy from sharing knowledge to
+              others
+            </p>
+          </div>
+          <div class="skills-card animate-on-scroll">
+            <img
+              src="./assets/images/paper_2541979.png"
+              alt=""
+              class="skills-icon"
+            />
+            <h2 class="head-skills">Loves Documentation</h2>
+
+            <p>
+              📖 Takes joy in documentation and recognizes its vital role in
+              fostering clear communication and collaboration with the team and
+              stakeholders.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects section" id="projects">
+      <div class="projects-container">
+        <h1 class="head-1 color-white text-center mb-3">
+          ✏️ My recent Projects
+        </h1>
+        <div class="container-tight">
+          <div class="projects-grid">
+            <div class="product-cards">
+              <div class="techStack">
+                <div class="project-descript">
+                  <h3 class="head-3 mb-1">Quiz game</h3>
+                  <p class="mb-1">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quis, illo molestias. Adipisci corrupti assumenda atque, ab
+                    ex nulla molestiae temporibus perspiciatis esse illum illo
+                    voluptatum? Quas aut error libero hic!
+                  </p>
+                </div>
+
+                <h3 class="head-3 mb-1">Tech used:</h3>
+                <div class="tech-category">
+                  <div class="tags">HTML</div>
+                  <div class="tags">CSS</div>
+                  <div class="tags">React</div>
+                  <div class="tags">Typescript</div>
+                  <div class="tags">Typescript</div>
+                  <div class="tags">Typescript</div>
+                </div>
+                <div class="arrow-container">
+                  <a
+                    href="https://master--idyllic-cocada-548832.netlify.app/"
+                    class="checkout-btn"
+                    target="_blank"
+                    >Check it out <span class="arrow-move">➡️</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="product-cards"></div>
+            <div class="product-cards"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer section bg-grey" id="contact">
+      <div class="about-content__container">
+        <div>
+          <img
+            src="./assets/images/RollerSkatingDoodle.svg"
+            alt=""
+            class="img-alter"
+          />
+        </div>
+        <h1 class="head-1 mb-3">
+          Thank you! For taking the time browsing my Website!
+        </h1>
+        <a
+          href="./assets/pdf/Medina-Resume.pdf"
+          class="btn btn-primary"
+          download
+          >download full resume</a
+        >
+      </div>
+    </footer>
+
+    <div class="copyright bg-grey section-small">
+      <h2 class="head-3">© Medina 2023</h2>
+    </div>
+
+    <script src="./assets/index.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

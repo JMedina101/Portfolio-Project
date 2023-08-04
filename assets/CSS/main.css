@@ -1,0 +1,371 @@
+/* utilities */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.head-2 {
+  font-size: 2rem;
+}
+.text-center {
+  text-align: center;
+}
+.head-1 {
+  font-size: 3rem;
+  color: #333;
+  line-height: 1;
+}
+.head-3 {
+  color: #333;
+  font-size: 1rem;
+}
+.color-white {
+  color: #fff;
+}
+.p-medium {
+  line-height: 1.58;
+  font-size: 1.3rem;
+}
+.eyebrow {
+  font-size: 1.2rem;
+  font-weight: inherit;
+}
+
+.bolder {
+  font-weight: 700;
+}
+.btn {
+  border-radius: 8px;
+  padding: 16px 40px;
+
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bg-grey {
+  background-color: #f7f7fa;
+}
+
+.btn-primary {
+  background-color: #000;
+  border: 1px solid #000;
+  color: white;
+  font-weight: 700;
+}
+
+.btn-secondary {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  font-weight: 800;
+}
+.btn-primary:hover {
+  background-color: transparent;
+  color: black;
+}
+.btn-secondary:hover {
+  background-color: black;
+  color: white;
+}
+.block-weighted {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.basis-50 {
+  flex-basis: 50%;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mr-half {
+  margin-right: 0.5rem;
+}
+.mr-1 {
+  margin-right: 1rem;
+}
+.section {
+  padding: 100px;
+}
+/* main section */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+  height: auto;
+}
+
+/* about */
+
+.about-content__container {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* skills */
+.skills-heading {
+  text-align: center;
+}
+.skills-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  margin-top: 50px;
+}
+
+.skills-icon {
+  width: 60px;
+  height: 60px;
+}
+.skills-card {
+  width: 90%;
+  background-color: #f7f7fa;
+  padding: 30px;
+  border-radius: 12px;
+  opacity: 0;
+}
+.animate {
+  animation: fadeIn 1s ease-out forwards; /* Animation */
+}
+.head-skills {
+  font-size: 1.3rem;
+}
+
+.container-tight {
+  max-width: 950px;
+  margin: 0 auto;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* projects section */
+.projects {
+  background-color: rgb(59, 124, 254);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+.product-cards {
+  background-color: white;
+
+  border-radius: 8px;
+  padding: 30px;
+}
+.techStack {
+  display: flex;
+  flex-direction: column;
+}
+.tech-category {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.tags {
+  padding: 10px;
+  margin-right: 1rem;
+  background-color: #020202;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.checkout-btn {
+  text-decoration: none;
+
+  color: #333;
+}
+.arrow-move {
+  animation: slideRight 2s linear forwards;
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(300px); /* Adjust the distance as needed */
+  }
+}
+.img-alter {
+  height: 350px;
+  width: 80%;
+}
+
+.section-small {
+  padding: 10px;
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #333;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 1px #eaeef1, 0 4px 30px 0 rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.navbar-links a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px;
+}
+.navbar-links a:hover {
+  background-color: #333;
+  color: white;
+  border-radius: 30px;
+}
+
+.navbar-hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Drawer styles */
+.drawer {
+  display: none;
+  background-color: #444;
+  color: white;
+  padding: 20px;
+  position: fixed;
+}
+
+.drawer a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+}
+
+/* Content styles */
+.content {
+  padding: 20px;
+}
+
+/* breakpoint */
+
+/* Styles for tablet devices */
+@media screen and (max-width: 1024px) {
+  /* Your CSS styles for tablet go here */
+  /* This will apply to devices with a width between 768px and 1024px (e.g., tablets) */
+  .main {
+    padding: 10px;
+  }
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .mr-half {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .main-content-container {
+    text-align: center;
+  }
+  .block-weighted {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .skills-grid-container {
+    grid-template-columns: 1fr;
+  }
+  .skills-card {
+    text-align: center;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-cards {
+    max-width: 700px;
+  }
+
+  .head-1 {
+    font-size: 2rem;
+  }
+  .head-2 {
+    font-size: 1.5rem;
+  }
+  .head-3 {
+    font-size: 1rem;
+  }
+  .p-medium {
+    font-size: 1rem;
+  }
+  .section {
+    padding: 50px;
+  }
+  .block-weighted > .img-container {
+    order: -1;
+  }
+
+  .drawer {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+  }
+
+  .drawer a {
+    color: white;
+  }
+
+  /* Add any other styles for tablets */
+}
+
+/* Styles for mobile devices */
+@media screen and (max-width: 767px) {
+  .navbar-hamburger {
+    display: block;
+    position: fixed;
+    top: 25px;
+    left: 15px;
+  }
+  .navbar {
+    display: none;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
