@@ -356,6 +356,9 @@ body {
 
 /* Styles for mobile devices */
 @media screen and (max-width: 767px) {
+  .main {
+    padding: 50px 0px;
+  }
   .navbar-hamburger {
     display: block;
     position: fixed;
