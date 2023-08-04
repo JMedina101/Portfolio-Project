@@ -340,9 +340,8 @@ body {
   }
 
   .drawer {
-    position: absolute;
+    position: fixed;
     top: 56px;
-    left: 0;
     width: 100%;
   }
 
