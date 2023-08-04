@@ -186,7 +186,10 @@ body {
 .techStack {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
 }
+
 .tech-category {
   display: flex;
   margin-bottom: 1rem;
