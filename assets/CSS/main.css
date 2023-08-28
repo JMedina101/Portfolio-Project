@@ -107,6 +107,11 @@ body {
 .section {
   padding: 100px;
 }
+
+.flex-h {
+  display: flex;
+  justify-content: space-between;
+}
 /* main section */
 
 .main {
@@ -122,9 +127,42 @@ body {
 .about-content__container {
   max-width: 850px;
   margin: 0 auto;
+}
+.about-content__container > .head-1 {
   text-align: center;
 }
+.experience-wrapper {
+  max-width: 1440px;
+  margin: 5rem auto;
+}
+.company {
+  margin-bottom: 2rem;
+}
+.position {
+  margin-bottom: 1rem;
+}
+.company-link {
+  text-decoration: none;
+  color: black;
+}
+.company-link:hover {
+  opacity: 0.8;
+}
 
+/* Experience */
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
+  margin-top: 5rem;
+}
+.position {
+  font-style: italic;
+}
+
+.responsibilities {
+  margin: 2rem;
+}
 /* skills */
 .skills-heading {
   text-align: center;
@@ -182,6 +220,9 @@ body {
 
   border-radius: 8px;
   padding: 30px;
+}
+.company-details {
+  margin-bottom: 1rem;
 }
 .techStack {
   display: flex;
@@ -352,6 +393,10 @@ body {
 
   .drawer a {
     color: white;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
   }
 
   /* Add any other styles for tablets */
