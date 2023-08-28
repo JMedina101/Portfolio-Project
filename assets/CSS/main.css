@@ -127,6 +127,7 @@ body {
 .about-content__container {
   max-width: 850px;
   margin: 0 auto;
+  text-align: center;
 }
 .about-content__container > .head-1 {
   text-align: center;
